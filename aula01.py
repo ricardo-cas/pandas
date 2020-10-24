@@ -12,13 +12,17 @@ def ler_arquivo_csv():
 
 # Métodos dessa seção são relacionados a seleção de dados do DataFrame 'dados'
 def seleciona_coluna():
+    print('#########'*16)
+    print('Selecionando colunas:')
     print(dados['Ano'])
     print(dados[['Nome','Ano']])
 
 def seleciona_linhas():
     # Selecionando linhas - [ i : j ] 
     # Observação: A indexação tem origem no zero e nos fatiamentos (*slices*) a linha com índice i é incluída e a linha com índice j não é incluída no resultado.
+    print('Selecionando linhas')
     print('#########'*16)
+    print(dados[:27])
 
 if __name__ == "__main__":
     ler_arquivo_csv()
