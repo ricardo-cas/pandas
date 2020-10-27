@@ -11,9 +11,20 @@ def ler_arquivo_csv():
     dados = pd.read_csv('db.csv', sep = ';', index_col = 0)
     print(dados.head()) # função 'Head' mostra os 5 primeiros registros do dataframe "dados"
 
+def selecionando_uma_coluna():
+    print('Selecionando uma Coluna \n')
+    print(dados['Valor'])
+    print(f'O Tipo dessa estrutura é:')
+    print(type(dados['Valor']))
+
+
+
 def __main():
     ler_arquivo_csv()
     print('#########'*16)
+    print('\n')
+    selecionando_uma_coluna()
+
 
 if __name__ == "__main__":
     __main()
