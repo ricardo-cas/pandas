@@ -18,7 +18,16 @@ def selecionando_uma_coluna():
     print(dados['Valor'])
     print(f'O Tipo dessa estrutura é:')
     print(type(dados['Valor']))
+    print('\n')
 
+def seleciona_linhas():
+    # Selecionando linhas - [ i : j ] 
+    # Observação: A indexação tem origem no zero e nos fatiamentos (*slices*) a linha com índice i é incluída e a linha com índice j 
+    # não é incluída no resultado.
+    print('Selecionando linhas:\n')
+    print(dados[:27])
+    print('#########'*16)
+    print('\n')
 
 
 def __main():
@@ -26,6 +35,7 @@ def __main():
     print('#########'*16)
     print('\n')
     selecionando_uma_coluna()
+    seleciona_linhas()
 
 
 if __name__ == "__main__":
