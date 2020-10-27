@@ -7,14 +7,17 @@ dados = pd.read_csv('db.csv', sep = ';')
 def ler_arquivo_csv():
     # _Para fazer a leitura de um CSV, utilizamos o comendo 'read_csv'
     # Aqui estou definndo que os meus dados devem ser do arquivo 'db.csv' e que ele utiliza o separado ';' para identificar as colunas
-    dados = pd.read_csv('db.csv', sep = ';')
+    # Indicando o índice que deve ser utilizado, baseado no arquivo importado.
+    dados = pd.read_csv('db.csv', sep = ';', index_col = 0)
     print(dados.head()) # função 'Head' mostra os 5 primeiros registros do dataframe "dados"
 
 # Métodos dessa seção são relacionados a seleção de dados do DataFrame 'dados'
-def seleciona_coluna():
+def seleciona_uma_coluna():
     print('#########'*16)
-    print('Selecionando colunas: \n')
+    print('Seleciona uma coluna: \n')
     print(dados['Ano'])
+    print('#########'*16)
+    print('Seleciona colunas: Nome e Ano \n')
     print(dados[['Nome','Ano']])
 
 def seleciona_linhas():
@@ -24,6 +27,7 @@ def seleciona_linhas():
     print('Selecionando linhas:')
     print('#########'*16)
     print(dados[:27])
+
 def selecionando_colunas():
     # O .loc seleciona um grupo de linahs e colunas segundo os rótulos ou uma matriz booleana. 
     # Comentaremos sobre esse último aspecto futuramente, quando estivermos trabalhando com queries em dataframes. 
@@ -38,11 +42,11 @@ def selecionando_colunas():
 def __main():
     ler_arquivo_csv()
     print('#########'*16)
-    seleciona_coluna()
+    seleciona_uma_coluna()
     print('#########'*16)
-    seleciona_linhas()
-    print('#########'*16)
-    selecionando_colunas()
+    # seleciona_linhas()
+    # print('#########'*16)
+    # selecionando_colunas()
 
 if __name__ == "__main__":
     __main()
