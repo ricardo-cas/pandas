@@ -19,10 +19,21 @@ def seleciona_coluna():
 
 def seleciona_linhas():
     # Selecionando linhas - [ i : j ] 
-    # Observação: A indexação tem origem no zero e nos fatiamentos (*slices*) a linha com índice i é incluída e a linha com índice j não é incluída no resultado.
+    # Observação: A indexação tem origem no zero e nos fatiamentos (*slices*) a linha com índice i é incluída e a linha com índice j 
+    # não é incluída no resultado.
     print('Selecionando linhas:')
     print('#########'*16)
     print(dados[:27])
+def selecionando_colunas():
+    # O .loc seleciona um grupo de linahs e colunas segundo os rótulos ou uma matriz booleana. 
+    # Comentaremos sobre esse último aspecto futuramente, quando estivermos trabalhando com queries em dataframes. 
+    # Para selecionarmos um rótulo, simplesmente o passaremos entre colchetes. Nesse exemplo, selecionaremos o "Passat".
+    print('\n')
+    print('#########'*16)
+    print('\n')
+    print(dados.iloc[[0,3]])
+    print('#########'*16)
+    print('\n')
 
 def __main():
     ler_arquivo_csv()
@@ -30,6 +41,8 @@ def __main():
     seleciona_coluna()
     print('#########'*16)
     seleciona_linhas()
+    print('#########'*16)
+    selecionando_colunas()
 
 if __name__ == "__main__":
     __main()
