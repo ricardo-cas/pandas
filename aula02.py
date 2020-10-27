@@ -11,6 +11,8 @@ def ler_arquivo_csv():
     dados = pd.read_csv('db.csv', sep = ';', index_col = 0)
     print(dados.head()) # função 'Head' mostra os 5 primeiros registros do dataframe "dados"
 
+# Métodos dessa seção são relacionados a seleção de dados do DataFrame 'dados'
+
 def selecionando_uma_coluna():
     print('Selecionando uma Coluna \n')
     print(dados['Valor'])
