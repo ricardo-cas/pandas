@@ -24,9 +24,12 @@ def seleciona_linhas():
     print('#########'*16)
     print(dados[:27])
 
-if __name__ == "__main__":
+def __main():
     ler_arquivo_csv()
     print('#########'*16)
     seleciona_coluna()
     print('#########'*16)
     seleciona_linhas()
+
+if __name__ == "__main__":
+    __main()
