@@ -38,6 +38,12 @@ def transformando_series_em_dataframe():
     print(type(dados[['Valor']]))
     print('\n')
 
+def utilizando_loc_para_seleções():
+    print('Outra forma de seleções é o ".loc", que faz: \n')
+    print('Seleciona um grupo de linhas e colunas segundo os rótulos ou uma matriz booleana." \n')
+    
+
+
 def __main():
     ler_arquivo_csv()
     print('#########'*16)
