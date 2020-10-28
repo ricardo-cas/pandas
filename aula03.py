@@ -11,7 +11,8 @@ def __main():
     carrega_base_de_dado()
     # seleciona_toda_coluna_motor()
     # selecionar_todos_os_carros_com_motor_a_diesel()
-    selecionando_duas_opcoes_na_consulta()
+    # selecionando_duas_opcoes_na_consulta()
+    utilizando_metodo_query()
 
 def seleciona_toda_coluna_motor():
     carrega_base_de_dado()
@@ -51,6 +52,8 @@ def utilizando_metodo_query():
     print('<°(^-^)°>'*10)
     print('\n')
     # Outra maneira de fazer a consulta é utilizando o método query do Python
+    dados.query('Motor == "Motor Diesel" and Zero_km == True')
+    print(dados.query('Motor == "Motor Diesel" and Zero_km == True'))
 
 if __name__ == "__main__":
     __main()
