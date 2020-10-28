@@ -55,7 +55,17 @@ def usando_iloc_para_selecionar_linhas_e_colunas():
     # Na linha abaixo estou definindo que só quero que seja exibido os dados do índice 0 até o 27
     # e logo após essa definição, estou  definindo quais colunas que eu quero que o método 'iloc' retorne para visualização.
     print('\n')
+    print('Selecionando dados do índice 0 até o 27 \n')
     print(dados.iloc[0:28, [0,5,2]])
+    print('*-#*-#*-#'*16)
+    print('\n')
+    print('Selecionando dados aletórios, com base no indice \n')
+    print(dados.iloc[[0,27,42,100,250], [0,5,2]])
+    print('*-#*-#*-#'*16)
+    print('\n')
+    print('Selecionando todos os dados do DataFrame, com colunas específicas \n')
+    print(dados.iloc[:, [0,5,2]])
+    print('\n')
     print('*-#*-#*-#'*16)
     print('\n')
 
