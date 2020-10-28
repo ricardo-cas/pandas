@@ -9,7 +9,8 @@ def ler_arquivo_csv():
     # Aqui estou definindo que os meus dados devem ser do arquivo 'db.csv' e que ele utiliza o separado ';' para identificar as colunas
     # Indicando o índice que deve ser utilizado, baseado no arquivo importado.
     dados = pd.read_csv('db.csv', sep = ';', index_col = 0)
-    print(dados.head()) # função 'Head' mostra os 5 primeiros registros do dataframe "dados"
+    # função 'Head' mostra os 5 primeiros registros do dataframe "dados"
+    print(dados.head()) 
 
 # Métodos dessa seção são relacionados a seleção de dados do DataFrame 'dados'
 
@@ -47,7 +48,16 @@ def utilizando_iloc_para_seleções():
     print(dados.iloc[0])
     print('*-#*-#*-#'*16)
 
-
+def usando_iloc_para_selecionar_linhas_e_colunas():
+    # O iLoc seleciona com base nos indíces da Series ou DataFrame
+    # Com isso, é possível definir não só a quantidade de registros que você receberá o retorno, como também quais colunas você quer visualizar
+    dados.iloc[0:28, [0,5,2]]
+    # Na linha abaixo estou definindo que só quero que seja exibido os dados do índice 0 até o 27
+    # e logo após essa definição, estou  definindo quais colunas que eu quero que o método 'iloc' retorne para visualização.
+    print('\n')
+    print(dados.iloc[0:28, [0,5,2]])
+    print('*-#*-#*-#'*16)
+    print('\n')
 
 def __main():
     ler_arquivo_csv()
@@ -57,8 +67,9 @@ def __main():
     seleciona_linhas()
     transformando_series_em_dataframe()
     utilizando_iloc_para_seleções()
+    usando_iloc_para_selecionar_linhas_e_colunas()
 
 
 if __name__ == "__main__":
     __main()
-# %%
+
