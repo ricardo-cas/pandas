@@ -1,4 +1,7 @@
 {
     "cSpell.enabled": true,
     "cSpell.language": "en,pt,pt_BR",
+    "cSpell.ignoreWords": [
+        "iloc"
+    ],
 }
