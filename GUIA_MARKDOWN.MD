@@ -204,6 +204,6 @@ Para fazer uma lista de tarefas é necessário utilizar um formato específico p
 ```
 
 
-*[x] Criar arquivo guia para Readme no Github
+*[X] Criar arquivo guia para Readme no Github
 *[x] Commit das mudanças
 *[ ] Envio das mudanças para o repositório
