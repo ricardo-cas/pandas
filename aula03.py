@@ -4,14 +4,14 @@ dados = pd.read_csv('db.csv', sep = ';', index_col=0)
 
 def carrega_base_de_dado():
     dados = pd.read_csv('db.csv', sep = ';', index_col=0)
-    # print(dados.head())
-    # print(dados.describe())
+    print(dados.head())
+    print(dados.describe())
 
 def __main():
     carrega_base_de_dado()
-    # seleciona_toda_coluna_motor()
-    # selecionar_todos_os_carros_com_motor_a_diesel()
-    # selecionando_duas_opcoes_na_consulta()
+    seleciona_toda_coluna_motor()
+    selecionar_todos_os_carros_com_motor_a_diesel()
+    selecionando_duas_opcoes_na_consulta()
     utilizando_metodo_query()
 
 def seleciona_toda_coluna_motor():
