@@ -24,11 +24,19 @@ def seleciona_linhas():
     # Selecionando linhas - [ i : j ] 
     # Observação: A indexação tem origem no zero e nos fatiamentos (*slices*) a linha com índice i é incluída e a linha com índice j 
     # não é incluída no resultado.
-    print('Selecionando linhas:\n')
+    print('Selecionando linhas de 0 à 27:\n')
     print(dados[:27])
     print('#########'*16)
     print('\n')
 
+def transformando_series_em_dataframe():
+    print('Transformando as informações da coluna "[Valor]" em um Data Frame \n')
+    # Adicionando um [] dentro da estrutura da série, é possível transformar o resultado para um Data Frame
+    print(dados[['Valor']])    
+    print('\n')
+    print(f'O Tipo dessa estrutura é:')
+    print(type(dados[['Valor']]))
+    print('\n')
 
 def __main():
     ler_arquivo_csv()
@@ -36,6 +44,7 @@ def __main():
     print('\n')
     selecionando_uma_coluna()
     seleciona_linhas()
+    transformando_series_em_dataframe()
 
 
 if __name__ == "__main__":
