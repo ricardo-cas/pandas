@@ -52,6 +52,7 @@ def utilizando_metodo_query():
     print('<°(^-^)°>'*10)
     print('\n')
     # Outra maneira de fazer a consulta é utilizando o método query do Python
+    # A Diferença entre esse metodo é que nele você passa direto as colunas e utiliza notação SQL para as condições (and, or)
     dados.query('Motor == "Motor Diesel" and Zero_km == True')
     print(dados.query('Motor == "Motor Diesel" and Zero_km == True'))
 
