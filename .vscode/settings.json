@@ -9,4 +9,7 @@
     "cSpell.words": [
         "querie"
     ],
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
 }
