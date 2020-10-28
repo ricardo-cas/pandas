@@ -7,8 +7,6 @@ def carrega_base_de_dado():
     print(dados.head())
     # print(dados.describe())
 
-
-
 def __main():
     carrega_base_de_dado()
     # seleciona_toda_coluna_motor()
