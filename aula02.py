@@ -38,10 +38,15 @@ def transformando_series_em_dataframe():
     print(type(dados[['Valor']]))
     print('\n')
 
-def utilizando_loc_para_seleções():
-    print('Outra forma de seleções é o ".loc", que faz: \n')
-    print('Seleciona um grupo de linhas e colunas segundo os rótulos ou uma matriz booleana." \n')
-    
+def utilizando_iloc_para_seleções():
+    dados['Valor']
+    print('*-#*-#*-#'*16)
+    print('Outra forma de seleções é o ".iloc", que faz: \n')
+    print('Seleciona com base nos índices, ou seja, se baseia na posição das informações.')
+    print('\n')
+    print(dados.iloc[0])
+    print('*-#*-#*-#'*16)
+
 
 
 def __main():
@@ -51,7 +56,9 @@ def __main():
     selecionando_uma_coluna()
     seleciona_linhas()
     transformando_series_em_dataframe()
+    utilizando_iloc_para_seleções()
 
 
 if __name__ == "__main__":
     __main()
+# %%
