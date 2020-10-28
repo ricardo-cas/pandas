@@ -45,7 +45,7 @@ Para enfase em um texto, podemos utilizar algumas atribuições como: Negrito, I
 ### Negrito
 <!-- Strong -->
 
-Este é um texto em **negrito**. Para utilizar essa marcação é necessário utilizar a palavra entre asteriscos `**<texto_aqui>**`
+Este é um texto em - - negrito- - . Para utilizar essa marcação é necessário utilizar a palavra entre asteriscos `- - <texto_aqui>- - `
 
 ### Itálico
 
@@ -62,7 +62,7 @@ Este é um texto em ~~itálico~~. Para utilizar essa marcação é necessário u
 Se você deseja fazer uma linha horizontal para dividir conteúdos, você pode utilizar `---` ou `___` 
 
 ---
-_**Texto entre as linhas**_
+_- - Texto entre as linhas- - _
 ___
 
 ## Blocos de citação
@@ -96,19 +96,19 @@ A imagem deve estar depois de `![texto_legenda]` seguido por entre `()` com o li
 
 ## Listas Não Ordenadas
 
-Para criação de listas não ordenadas é necessário colocar o asterisco `* Item` antes do item para criar a lista. Exemplo:
+Para criação de listas não ordenadas é necessário colocar o asterisco `-  Item` antes do item para criar a lista. Exemplo:
 
-* Item 1
-* Item 2
-* Item 3
+-  Item 1
+-  Item 2
+-  Item 3
 
-Se você deseja criar **_sub itens_** dentro da lista, é só realizar a identação na lista, conforme exemplo:
+Se você deseja criar - - _sub itens_- -  dentro da lista, é só realizar a identação na lista, conforme exemplo:
 
-* Item 1
-* Item 2
-  * Sub item 1
-    * Sub item 2
-      * Sub item 3
+-  Item 1
+-  Item 2
+  -  Sub item 1
+    -  Sub item 2
+      -  Sub item 3
 
 ## Listas Ordenadas
 
@@ -133,7 +133,7 @@ Para colocar uma linha de códigos em forma comentários, é necessário utiliza
 
 ### Várias linhas de código em forma de comentário
 Para colocar um bloco de códigos em forma comentários, é necessário utilizar  \```html
-código```  e também é **_recomendado_** que você coloque a linguagem em que aquele bloco de código está escrito, para facilitar a marcação de palavras reservadas daquela linguagem.
+código```  e também é - - _recomendado_- -  que você coloque a linguagem em que aquele bloco de código está escrito, para facilitar a marcação de palavras reservadas daquela linguagem.
 
 #### Html
 ``` html
@@ -198,12 +198,12 @@ Para criar tabelas é necessário utilizar um formato específico para o Github,
 Para fazer uma lista de tarefas é necessário utilizar um formato específico para o Github, conforme bloco de códigos abaixo:
 
 ```bash
-*[x] Item completado
-*[x] Item completado
-*[ ] Item não completado
+- [x] Item completado
+- [x] Item completado
+- [ ] Item não completado
 ```
 
 
-*[X] Criar arquivo guia para Readme no Github
-*[x] Commit das mudanças
-*[ ] Envio das mudanças para o repositório
+- [x] Criar arquivo guia para Readme no Github
+- [x] Commit das mudanças
+- [ ] Envio das mudanças para o repositório
