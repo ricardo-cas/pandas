@@ -9,7 +9,7 @@
 Arquivos referente as aulas do curso:
 
 ```bash
-- [ ] Conhecendo Jupyter
+- [x] Conhecendo Jupyter
 - [ ] Importando dados
 - [ ] Series e Index
 - [ ] Filtrando dados
