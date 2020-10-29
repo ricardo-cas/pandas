@@ -1,6 +1,6 @@
 *.ipynb
-/*.
 
+!/.gitignore
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,jupyternotebooks,archive,archives,flask,flutter
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm,jupyternotebooks,archive,archives,flask,flutter
