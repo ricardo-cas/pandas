@@ -8,13 +8,13 @@
 
 Arquivos referente as aulas do curso:
 
-```bash
+```
 - [x] Conhecendo Jupyter
 - [ ] Importando dados
 - [ ] Series e Index
 - [ ] Filtrando dados
-- [ ] Frequencia de imóveis
-- [ ] Trantando dados faltantes
+- [ ] Frequência de imóveis
+- [ ] Tratando dados faltantes
 - [ ] Novas variáveis
 - [ ] Estatísticas descritivas
 - [ ] Removendo Outliers
