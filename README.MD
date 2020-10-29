@@ -8,7 +8,7 @@
 
 Arquivos referente as aulas do curso:
 
-```
+
 - [x] Conhecendo Jupyter
 - [ ] Importando dados
 - [ ] Series e Index
@@ -18,7 +18,7 @@ Arquivos referente as aulas do curso:
 - [ ] Novas variáveis
 - [ ] Estatísticas descritivas
 - [ ] Removendo Outliers
-```
+
 
 
 
