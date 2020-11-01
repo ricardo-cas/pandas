@@ -28,11 +28,18 @@ def carrega_arquivo_txt():
     arquivo_txt = open('extras/dados/aluguel.txt')
     print(arquivo_txt.read())
 
+def importando_txt_em_um_data_frame():
+    # Para o pandas ler um arquivo txt utilize o método read_tables()
+    # O separador default do metodo é tabulação "\t", estou definindo somente para saber depois
+    df_txt = pd.read_table('extras/dados/aluguel.txt', sep="\t")
+    print(df_txt.head())
+
 
 def main():
     # carrega_arquivo_json()
     # importando_json_em_um_data_frame()
-    carrega_arquivo_txt()
+    # carrega_arquivo_txt()
+    importando_txt_em_um_data_frame()
 
 
 
