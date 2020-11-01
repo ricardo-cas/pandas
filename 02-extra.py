@@ -24,11 +24,14 @@ def importando_json_em_um_data_frame():
 
 def carrega_arquivo_txt():
     print('Hello arquivo txt')
+    # importando arquivo para o pandas
+    arquivo_txt = open('extras/dados/aluguel.txt')
+    print(arquivo_txt.read())
 
 
 def main():
-    carrega_arquivo_json()
-    importando_json_em_um_data_frame()
+    # carrega_arquivo_json()
+    # importando_json_em_um_data_frame()
     carrega_arquivo_txt()
 
 
