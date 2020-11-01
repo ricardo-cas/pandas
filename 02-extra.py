@@ -34,12 +34,19 @@ def importando_txt_em_um_data_frame():
     df_txt = pd.read_table('extras/dados/aluguel.txt', sep="\t")
     print(df_txt.head())
 
+def importando_arquivo_excel():
+    # Para ler arquivo excel utilize o método read_excel()
+    print('Para conseguir realizar a leitura do arquivo Excel, é necessário instalar "pip install xlrd"')
+    arquivo_excel = pd.read_excel('extras/dados/aluguel.xlsx')
+    print(arquivo_excel.head())
+
 
 def main():
     # carrega_arquivo_json()
     # importando_json_em_um_data_frame()
     # carrega_arquivo_txt()
-    importando_txt_em_um_data_frame()
+    # importando_txt_em_um_data_frame()
+    importando_arquivo_excel()
 
 
 
