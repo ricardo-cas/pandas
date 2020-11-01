@@ -11,6 +11,7 @@ Arquivos referente as aulas do curso:
 
 - [x] Conhecendo Jupyter
 - [ ] Importando dados
+  - [ ] Aula extra: Lendo diferente tipos de dados
 - [ ] Series e Index
 - [ ] Filtrando dados
 - [ ] Frequência de imóveis
