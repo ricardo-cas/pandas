@@ -1,6 +1,6 @@
 import pandas as pd
 
-def carrega_json():
+def carrega_arquivo_json():
     json = open('extras/dados/aluguel.json')
     # mostrando as informações sobre a variavel
     print('Visualizando o tipo do arquivo que foi lido pelo pandas, utilizando o método OPEN \n')
@@ -23,8 +23,11 @@ def importando_json_em_um_data_frame():
 
 
 def main():
-    carrega_json()
+    carrega_arquivo_json()
     importando_json_em_um_data_frame()
+
+
+
 
 
 if __name__ == "__main__":
