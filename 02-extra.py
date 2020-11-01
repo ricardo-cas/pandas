@@ -40,16 +40,33 @@ def importando_arquivo_excel():
     arquivo_excel = pd.read_excel('extras/dados/aluguel.xlsx')
     print(arquivo_excel.head())
 
+def importando_arquivo_html():
+    print('Hello Web')
+    # Para ler arquivo html, utilize o método read_html()
+    df_html = pd.read_html('extras/dados/dados_html_1.html')
+    print(df_html[0])
+
+def lendo_pagina_da_web():
+    df_web = pd.read_html('https://www.federalreserve.gov/releases/h3/current/')
+    # lendo a quantidade de listas que está dentro do dataframe
+    print(len(df_web))
+    # Visualizando o conteúdo de cada lista do DF
+    print('Visualizando o conteúdo da tabela 1')
+    print(df_web[0])
+    print('Visualizando o conteúdo da tabela 2')
+    print(df_web[1])
+    print('Visualizando o conteúdo da tabela 3')
+    print(df_web[2])
+
 
 def main():
     # carrega_arquivo_json()
     # importando_json_em_um_data_frame()
     # carrega_arquivo_txt()
     # importando_txt_em_um_data_frame()
-    importando_arquivo_excel()
-
-
-
+    # importando_arquivo_excel()
+    # importando_arquivo_html()
+    lendo_pagina_da_web()
 
 
 if __name__ == "__main__":
