@@ -22,9 +22,14 @@ def importando_json_em_um_data_frame():
     print(df_json)
 
 
+def carrega_arquivo_txt():
+    print('Hello arquivo txt')
+
+
 def main():
     carrega_arquivo_json()
     importando_json_em_um_data_frame()
+    carrega_arquivo_txt()
 
 
 
