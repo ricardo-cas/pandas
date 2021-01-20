@@ -12,4 +12,5 @@
     "cSpell.enableFiletypes": [
         "!python"
     ],
+    "python.pythonPath": "C:\\Users\\Pichau\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
 }
