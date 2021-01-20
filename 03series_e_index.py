@@ -2,6 +2,12 @@ import pandas as pd
 
 def inicializa_base():
     base = pd.read_csv('./aluguel.csv',sep=';')
+    analise_iniciais()
+    return base
+
+
+def analise_iniciais():
+    base = pd.read_csv('./aluguel.csv',sep=';')
     print(f'10 primeiras informações da Base:\n{base.head(10)}\n')
     print(f'\n Estatisticas de todos as colunas que possuem número:')
     print(base.value_counts())
@@ -10,6 +16,15 @@ def inicializa_base():
     print(f'\nValores estatísticos da base:\n{base.describe()}')
     print(f'\nÚltimos valores da base:\n{base.tail()}')
     print(base.groupby)
+    base_dados()
+
+
+
+def base_dados():
+    base = pd.read_csv('./aluguel.csv',sep=';')
+    print(base['Tipo'])
+
 
 if __name__ == "__main__":
     inicializa_base()
+    # analise_iniciais()
