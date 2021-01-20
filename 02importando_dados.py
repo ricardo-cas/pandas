@@ -34,14 +34,10 @@ def quantidade_de_observacoes():
     print('Exibindo as duas informações de uma maneira unica:')
     print('A base possuíu {} registros e {} variáveis'.format(dados.shape[0], dados.shape[1]))
 
-
-
-
 def main():
     carrega()
     tipo_de_dados_do_dataframe()
     quantidade_de_observacoes()
-
 
 if __name__ == "__main__":
     main()
